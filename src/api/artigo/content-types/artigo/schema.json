@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artigos",
+  "info": {
+    "singularName": "artigo",
+    "pluralName": "artigos",
+    "displayName": "Artigo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "resumo": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "referencias": {
+      "type": "richtext"
+    },
+    "bibliografia": {
+      "type": "richtext"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "pub_date": {
+      "type": "datetime"
+    }
+  }
+}

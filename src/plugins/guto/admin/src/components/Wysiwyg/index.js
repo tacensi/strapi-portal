@@ -5,8 +5,7 @@ import { Box } from "@strapi/design-system/Box";
 import { Button } from "@strapi/design-system/Button";
 import { Typography } from "@strapi/design-system/Typography";
 import Landscape from "@strapi/icons/Landscape";
-import MediaLib from "../MediaLib";
-// import Tinymce;
+import Gutenberg from "../Gutenberg";
 import { useIntl } from "react-intl";
 
 const Wysiwyg = ({
@@ -63,7 +62,7 @@ const Wysiwyg = ({
         >
           Media Library
         </Button>
-        {/* todo: add gutenberg */}
+        <Gutenberg name={name} onChange={onChange} value={value} />
       </Stack>
       <MediaLib
         isOpen={mediaLibVisible}
